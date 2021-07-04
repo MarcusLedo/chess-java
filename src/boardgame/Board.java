@@ -32,7 +32,14 @@ public class Board {
 		this.column = column;
 	}
 	
+	public Piece piece(int row, int column) {
+		return pieces[row][column];
+	}
 	
+	//Sobrecarga
+	public Piece piece(Position position) {
+		return pieces[position.getRow()][position.getColumn()];
+	}
 	
 	
 }
